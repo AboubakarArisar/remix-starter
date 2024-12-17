@@ -35,20 +35,20 @@ const features = [
 
 export default function Index() {
   return (
-    <div className='flex min-h-screen relative items-center justify-center flex-col'>
+    <div className='flex min-h-screen bg-black relative items-center justify-center flex-col'>
       <div className='absolute top-0 w-full h-30 py-4 bg-slate-800 shadow'>
         <Header />
       </div>
-      <div className='absolute top-20'>
-        <h1 className='text-3xl font-semibold text-yellow-300'>
+      <div className=' mt-20 md:mt-0 md:absolute md:top-20'>
+        <h1 className=' md:text-3xl text-center font-semibold text-yellow-300'>
           Welcome to the Remix application
         </h1>
       </div>
       <div className='p-4 mt-12'>
-        <h1 className='text-3xl text-orange-400 font-bold text-center'>
+        <h1 className='md:text-3xl text-orange-400 font-bold text-center'>
           Why Choose Remix?
         </h1>
-        <div className='flex w-full p-4 gap-4'>
+        <div className='flex flex-col md:flex-row w-full mb-12 md:mb-0 p-4 gap-4'>
           {features.map((feature, index) => (
             <FeatureCard
               key={index}

@@ -6,7 +6,7 @@ type cardProps = {
 
 export default function FeatureCard({ title, description, image }: cardProps) {
   return (
-    <div className='p-2  border h-[50vh] w-1/4 border-gray-900 rounded-lg shadow-md'>
+    <div className='p-2  border h-[50vh] md:w-1/4 border-gray-900 rounded-lg shadow-md'>
       <img
         className='w-full h-[50%] rounded-t-lg'
         src={image}
